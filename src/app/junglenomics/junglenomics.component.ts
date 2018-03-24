@@ -12,4 +12,8 @@ export class JunglenomicsComponent implements OnInit {
   ngOnInit() {
   }
 
+ Cards = [
+   {title: "", img: "", synopsis: "", type: "", rating:""}
+ ]
+
 }
