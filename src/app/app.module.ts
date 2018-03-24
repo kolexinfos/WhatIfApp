@@ -6,6 +6,10 @@ import {ScrollToModule} from 'ng2-scroll-to';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { JunglenomicsComponent } from './junglenomics/junglenomics.component';
+import { SkillmiComponent } from './skillmi/skillmi.component';
+import { KoncentricComponent } from './koncentric/koncentric.component';
+import { KrysalisComponent } from './krysalis/krysalis.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -15,7 +19,11 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    JunglenomicsComponent,
+    SkillmiComponent,
+    KoncentricComponent,
+    KrysalisComponent
   ],
   imports: [
     BrowserModule,
