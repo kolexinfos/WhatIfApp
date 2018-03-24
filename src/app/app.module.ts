@@ -13,6 +13,10 @@ import { KrysalisComponent } from './krysalis/krysalis.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
+  { path: 'junglenomics', component: JunglenomicsComponent },
+  { path: 'skillmi', component: SkillmiComponent },
+  { path: 'krysalis', component: KrysalisComponent },
+  { path: 'koncentric', component: KoncentricComponent },
 ]
 
 
