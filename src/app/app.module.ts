@@ -10,6 +10,8 @@ import { JunglenomicsComponent } from './junglenomics/junglenomics.component';
 import { SkillmiComponent } from './skillmi/skillmi.component';
 import { KoncentricComponent } from './koncentric/koncentric.component';
 import { KrysalisComponent } from './krysalis/krysalis.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -27,7 +29,9 @@ const appRoutes: Routes = [
     JunglenomicsComponent,
     SkillmiComponent,
     KoncentricComponent,
-    KrysalisComponent
+    KrysalisComponent,
+    LoginComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
