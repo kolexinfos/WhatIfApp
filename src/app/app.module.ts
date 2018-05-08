@@ -12,9 +12,12 @@ import { KoncentricComponent } from './koncentric/koncentric.component';
 import { KrysalisComponent } from './krysalis/krysalis.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoutes: Routes = [
-  { path: '', component: MainComponent },
+  { path: 'main', component: MainComponent },
+  { path: '', component: LoginComponent },
+  { path: 'logout', component: LogoutComponent },
   { path: 'junglenomics', component: JunglenomicsComponent },
   { path: 'skillmi', component: SkillmiComponent },
   { path: 'krysalis', component: KrysalisComponent },
@@ -31,7 +34,8 @@ const appRoutes: Routes = [
     KoncentricComponent,
     KrysalisComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
