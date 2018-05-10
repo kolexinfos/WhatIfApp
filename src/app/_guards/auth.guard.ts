@@ -31,9 +31,11 @@ export class AuthGuard implements CanActivate, CanActivateChild {
         var now = Date.now();
         var status:boolean = now < expire.getTime();
         
-        console.log(route.component);
+        //console.log(route.component);
 
-        //if(route.component == "")
+        // if(route.component == "HomeComponent"){
+        //     return true;
+        // }
 
         if( token != undefined && ( now < expire.getTime() )){
             console.log("Logged in as ");

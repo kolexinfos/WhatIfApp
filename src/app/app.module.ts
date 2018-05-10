@@ -16,10 +16,11 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [ 
-  { path: 'login', component: LoginComponent },
-  { path: '', component: MainComponent, canActivateChild: [AuthGuard],
+  { path: '', component: LoginComponent },
+  { path: 'main', component: MainComponent, canActivateChild: [AuthGuard],
     children: [
         { path: 'logout', component: LogoutComponent },
+        { path: '', component: HomeComponent },
         { path: 'junglenomics', component: JunglenomicsComponent },
         { path: 'skillmi', component: SkillmiComponent },
         { path: 'krysalis', component: KrysalisComponent },
@@ -52,7 +53,7 @@ const appRoutes: Routes = [
       {enableTracing: true }
     )
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
